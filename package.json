@@ -8,8 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node websocketMainServer.js",
-    "test": "node websocketMainServer.js"
+    "start": "node index.js",
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",

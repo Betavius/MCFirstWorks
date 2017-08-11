@@ -3,8 +3,8 @@ var password = "password";
 
 //DO NOT EDIT ANYTHING BELOW.
 var WebsocketServer = require('ws').Server;
-var ipaddress = process.env.OPENSHIFT_NODEJS_IP || process.env.IP ||  "localhost";
-var port      = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 5000;
+var ipaddress = process.env.OPENSHIFT_NODEJS_IP || process.env.IP ||  "127.0.0.1";
+var port      = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 8000;
 
 wss = new WebsocketServer({ port: port, host: ipaddress });
 
