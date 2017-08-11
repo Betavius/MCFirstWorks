@@ -3,7 +3,7 @@ var password = "password";
 
 //DO NOT EDIT ANYTHING BELOW.
 var WebsocketServer = require('ws').Server;
-var ipaddress = process.env.OPENSHIFT_NODEJS_IP || process.env.IP ||  "localhost";
+var ipaddress = process.env.OPENSHIFT_NODEJS_IP || process.env.IP ||  "https://mc-project.herokuapp.com/";
 var port      = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 5000;
 
 wss = new WebsocketServer({ port: port, host: ipaddress });
